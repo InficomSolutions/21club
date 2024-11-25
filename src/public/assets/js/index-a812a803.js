@@ -1495,7 +1495,7 @@ function Ka() {
 }
 const y = Ka(),
   za = {
-    "91club": () => {
+    "24club": () => {
       const s = { 356634288423: "749293993830590" },
         a = y.invitationCode || sessionStorage.getItem("invitecode"),
         e = y.fb_dynamic_pixel || s[a] || "";

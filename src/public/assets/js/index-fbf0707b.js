@@ -4312,7 +4312,7 @@ const v4 = (e) => {
     ruleBonus: "Attendance bonus",
     safetyVerification: "Security verification",
     bindPhone: "Bind phone number",
-    winGoMes: "Welcome to 92lottery",
+    winGoMes: "Welcome to 24club",
     electronicGame: "Slots",
     searchGame: "Search game",
     cancelled: "Cancelled",
@@ -7491,7 +7491,7 @@ const v4 = (e) => {
     ruleBonus: "Attendance bonus",
     safetyVerification: "Security verification",
     bindPhone: "Bind phone number",
-    winGoMes: "Welcome to 92lottery",
+    winGoMes: "Welcome to 24club",
     electronicGame: "Slots",
     searchGame: "Search game",
     cancelled: "Cancelled",
@@ -47642,7 +47642,7 @@ function TD() {
 }
 const aa = TD(),
   kD = {
-    "91club": () => {
+    "24club": () => {
       const e = {
           356634288423: "749293993830590",
         },

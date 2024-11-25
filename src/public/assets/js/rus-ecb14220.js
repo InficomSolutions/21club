@@ -515,7 +515,7 @@ const e = {
   ruleBonus: "Attendance bonus",
   safetyVerification: "Security verification",
   bindPhone: "Bind phone number",
-  winGoMes: "Welcome to 92lottery",
+  winGoMes: "Welcome to 24club",
   electronicGame: "Slots",
   searchGame: "Search game",
   cancelled: "Cancelled",
