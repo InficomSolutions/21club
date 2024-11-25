@@ -202,9 +202,17 @@ const listMember = async (req, res) => {
           status: false,
       });
   }
-  const [users] = await connection.query(
-      `SELECT * FROM users WHERE veri = 1 AND level != 2 ORDER BY id DESC LIMIT ${pageno}, ${limit} `
-  );
+
+  
+// Ensure pageno and limit are integers
+const offset = (parseInt(pageno, 10) - 1) * parseInt(limit, 10);
+
+// Use prepared statements with ? placeholders to prevent SQL injection
+const [users] = await connection.query(
+  `SELECT * FROM users WHERE veri = 1 AND level != 2 ORDER BY id DESC LIMIT ?, ?`,
+  [offset, parseInt(limit, 10)]  // Convert limit to integer
+);
+
   const [total_users] = await connection.query(
       `SELECT * FROM users WHERE veri = 1 AND level != 2`
   );
