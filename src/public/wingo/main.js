@@ -124,7 +124,7 @@ function countDownTimer({ GAME_TYPE_ID }) {
   countDownInterval3 = setInterval(function () {
     const { minute, seconds1, seconds2 } = getTimeMSS(countDownDate);
 
-    if (minute == 0 && seconds1 == 0 && seconds2 <= 0) {
+    if (minute == 0 && seconds1 == 0 && seconds2 <= 5) {
       $(".van-overlay").fadeOut();
       $(".popup-join").fadeOut();
 
@@ -137,6 +137,8 @@ function countDownTimer({ GAME_TYPE_ID }) {
   }, 0);
 }
 countDownInterval4 = setInterval(function () {
+  var countDownDate = new Date("2030-07-16T23:59:59.9999999+03:00").getTime();
+
     const { minute, seconds1, seconds2 } = getTimeMSS(countDownDate);
     if (GAME_TYPE_ID !== "1") {
       $(".TimeLeft__C-time div:eq(1)").text(seconds);
